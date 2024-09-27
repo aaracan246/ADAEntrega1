@@ -9,8 +9,8 @@ import kotlin.io.path.Path
 fun main() {
 
     val gestorFich = GestorFich()
-    val file = File("C:\\Users\\UsuarioT\\PROG\\ADA\\ADAEntrega1\\src\\main\\resources\\cotizacion.csv")
-    val fileEnd = File("C:\\Users\\UsuarioT\\PROG\\ADA\\ADAEntrega1\\src\\main\\resources\\cotizacionResults.csv")
+    val file = File("ficheros/cotizacion.csv")
+    val fileEnd = File("ficheros/cotizacion2.csv")
     val diccionario = gestorFich.fichReader(file)
 
     gestorFich.fichWriter(diccionario, fileEnd)
